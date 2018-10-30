@@ -1,11 +1,20 @@
-import sys, getopt
+import sys,
+    getopt,
+    argparse
 
 def main(argv):
     print(argv[1])
     print(len(argv))
+    for i, opt in enumerate(sys.argv):
+        print(opt)
+        if opt== '--help':
+            print('help ready')
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+
+
+    
 '''
 You are to write two tiny Python scripts that test out processing command line arguments using two
 methods:
