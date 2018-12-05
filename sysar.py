@@ -1,6 +1,4 @@
-import sys,
-    getopt,
-    argparse
+import sys,getopt
 
 def main(argv):
     print(argv[1])
